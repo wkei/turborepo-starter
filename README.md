@@ -2,9 +2,9 @@
 
 ## Approachs
 
-- Approach 1: use simple turborepo default structure, use a `main` app to import other sub apps and handle top routing, so that the final build will be in one place only.
-- Approach 2: build and serve sub apps into separate folders, handle s3 routing & code reuse (for same bundle library). `TBD`
-- Approach 3: build and serve sub apps separately, but serve within a main app and use lazy load to js files of sub app internally base on the routing. `TBD`
+- **Approach 1**: use simple turborepo default structure, use a `main` app to import other sub apps and handle top routing, so that the final build will be in one place only.
+- **Approach 2**: build and serve sub apps into separate folders, handle s3 routing & code reuse (for same bundle library). `TBD`
+- **Approach 3**: build and serve sub apps separately, but serve within a main app and use lazy load to js files of sub app internally base on the routing. `TBD`
 
 
 ## techstack
