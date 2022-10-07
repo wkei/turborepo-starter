@@ -2,9 +2,7 @@
 
 ## approaches
 
-- **approach 1**: use turborepo default structure, create a `main` app to import other sub apps and handle the top routing, so that the final build will be in one place only.
-  - current implement
-  - TODO: lazy loading base on routing: https://stackblitz.com/edit/github-y5k5fx-6eowtr
+- **approach 1**: use turborepo default structure, create a `main` app to lazy load other sub apps and handle the top routing, so that the final build will be in one place only.
 - **approach 2**: build and serve sub apps into separate folders, handle s3 routing & code reuse (for common vendor libraries). `TBD`
   - https://github.com/originjs/vite-plugin-federation
 
@@ -13,7 +11,7 @@
 
 - Turborepo
 - React
-- React Router
+- React Router (Lazy Loading)
 - Storybook
 - Vite
 
@@ -36,7 +34,7 @@
 
 - `apps/app1`: sub app, handles it own sub routing
 - `apps/app2`: sub app, handles it own sub routing
-- `apps/main`: main entry, import other sub apps and handles the top routing
+- `apps/main`: main entry, **lazy load** other sub apps and handles the top routing
 - `apps/storybook`: storybook, for ui checking
 - `packages/ui`: basic ui components, like buttons, tabs, cards, ...
 - `packages/componetns`: complex shareable components, like main layout, logout confirm dialog, ...
