@@ -38,8 +38,8 @@
 - `apps/app2`: sub app, handles it own sub routing
 - `apps/main`: main entry, import other sub apps and handles the top routing
 - `apps/storybook`: storybook, for ui checking
-- `packages/ui`: basic ui components, like buttons, tabs, cards
-- `packages/componetns`: complex shareable components, like logout confirm dialog, common header
+- `packages/ui`: basic ui components, like buttons, tabs, cards, ...
+- `packages/componetns`: complex shareable components, like main layout, logout confirm dialog, ...
 - `packages/tsconfig`: common tsconfig
 - `packages/eslint`: common eslint config
 
