@@ -1,10 +1,12 @@
 # turborepo starter
 
-## Approachs
+## approaches
 
-- Approach 1: use simple turborepo default structure, use a `main` app to import other sub apps and handle top routing, so that the final build will be in one place only.
-- Approach 2: build and serve sub apps into separate folders, handle s3 routing & code reuse (for same bundle library). `TBD`
-- Approach 3: build and serve sub apps separately, but serve within a main app and use lazy load to js files of sub app internally base on the routing. `TBD`
+- **approach 1**: use turborepo default structure, create a `main` app to import other sub apps and handle the top routing, so that the final build will be in one place only.
+  - current implement
+  - TODO: lazy loading base on routing: https://stackblitz.com/edit/github-y5k5fx-6eowtr
+- **approach 2**: build and serve sub apps into separate folders, handle s3 routing & code reuse (for common vendor libraries). `TBD`
+  - https://github.com/originjs/vite-plugin-federation
 
 
 ## techstack
@@ -36,8 +38,8 @@
 - `apps/app2`: sub app, handles it own sub routing
 - `apps/main`: main entry, import other sub apps and handles the top routing
 - `apps/storybook`: storybook, for ui checking
-- `packages/ui`: basic ui components, like buttons, tabs, cards
-- `packages/componetns`: complex shareable components, like logout confirm dialog, common header
+- `packages/ui`: basic ui components, like buttons, tabs, cards, ...
+- `packages/componetns`: complex shareable components, like main layout, logout confirm dialog, ...
 - `packages/tsconfig`: common tsconfig
 - `packages/eslint`: common eslint config
 
@@ -97,3 +99,9 @@ yarn build:storybook
 ## deploy
 
 ...
+
+
+## references
+
+- https://github.com/vercel/turborepo/tree/main/examples/with-vite
+- https://github.com/vercel/turborepo/tree/main/examples/design-system
