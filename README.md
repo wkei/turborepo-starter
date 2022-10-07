@@ -1,10 +1,12 @@
 # turborepo starter
 
-## approaches
+## approach
 
-- **approach 1**: use turborepo default structure, create a `main` app to lazy load other sub apps and handle the top routing, so that the final build will be in one place only.
-- **approach 2**: build and serve sub apps into separate folders, handle s3 routing & code reuse (for common vendor libraries). `TBD`
-  - https://github.com/originjs/vite-plugin-federation
+use turborepo default structure, create a `main` app to lazy load other sub apps and handle the top routing, so that the final build will be in one place only.
+
+**TBD:**
+
+to make sub apps be able to deployed separately, use https://github.com/originjs/vite-plugin-federation
 
 
 ## techstack
