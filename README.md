@@ -86,3 +86,9 @@ yarn build:storybook
 ## deploy
 
 ...
+
+
+## references
+
+- https://github.com/vercel/turborepo/tree/main/examples/with-vite
+- https://github.com/vercel/turborepo/tree/main/examples/design-system
