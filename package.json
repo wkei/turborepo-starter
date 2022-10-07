@@ -8,6 +8,7 @@
     "build:main": "turbo run build --filter=main",
     "build:storybook": "turbo run build --filter=storybook",
     "dev": "turbo run dev --parallel",
+    "dev:main": "turbo run dev --filter=main",
     "dev:app1": "turbo run dev --filter=app1",
     "dev:app2": "turbo run dev --filter=app2",
     "dev:storybook": "turbo run dev --filter=storybook",

@@ -75,6 +75,19 @@ yarn build:main
 
 Output will be in `apps/main/dist` by default
 
+```
+apps/main/dist
+├── assets
+│  ├── App.[hash].js // sub app, TODO: custom chunk name
+│  ├── App.[hash].js // sub app, TODO: custom chunk name
+│  ├── index.[hash].js
+│  ├── index.[hash].css
+│  ├── vendor.[hash].js
+│  └── ...assets
+├── index.html
+└── ...public assets
+```
+
 ### build the storybook
 
 ```

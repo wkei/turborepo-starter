@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link, Outlet, Route, Routes } from "react-router-dom";
 
-import reactLogo from "./assets/react.svg";
+import viteLogo from "./assets/vite.svg";
 
 import { Layout } from "components";
 import { Button } from "ui";
@@ -9,7 +9,7 @@ import { Button } from "ui";
 const Foo = () => (
   <div>
     <h3>foo</h3>
-    <img src={reactLogo} />
+    <img src={viteLogo} />
   </div>
 );
 const Bar = () => {
