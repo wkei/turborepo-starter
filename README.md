@@ -2,7 +2,7 @@
 
 ## approach
 
-use turborepo default structure, create a `main` app to lazy load other sub apps and handle the top routing, so that the final build will be in one place only.
+use turborepo default structure, create a `main` app to **lazy load** other sub apps and handle the top routing, so that the final build will be in one place only.
 
 **TBD:**
 
@@ -36,7 +36,7 @@ to make sub apps be able to deployed separately, use https://github.com/originjs
 
 - `apps/app1`: sub app, handles it own sub routing
 - `apps/app2`: sub app, handles it own sub routing
-- `apps/main`: main entry, **lazy load** other sub apps and handles the top routing
+- `apps/main`: main entry, lazy load other sub apps and handles the top routing
 - `apps/storybook`: storybook, for ui checking
 - `packages/ui`: basic ui components, like buttons, tabs, cards, ...
 - `packages/componetns`: complex shareable components, like main layout, logout confirm dialog, ...
